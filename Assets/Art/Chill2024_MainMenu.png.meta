@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2f1ac29dac5e7514cbac0d1b19a09ad4
+guid: fd1a704c2e809da42ab37492f1c177e2
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -72,7 +72,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 2
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -114,7 +114,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 256
         width: 128
         height: 128
       alignment: 0
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 833d096be52055f43af4cecf937da22e
-      internalID: -1548634832
+      spriteID: 8c0f6acbf37a1ab47bc378a974f2b317
+      internalID: -1129633749
       vertices: []
       indices: 
       edges: []
@@ -134,10 +134,10 @@ TextureImporter:
       name: Chill2024_MainMenu_1
       rect:
         serializedVersion: 2
-        x: 156
-        y: 218
-        width: 71
-        height: 32
+        x: 128
+        y: 341
+        width: 128
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,8 +145,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 100fb1a3352cdb243910c5e18bda32d0
-      internalID: -695792151
+      spriteID: cca69e63b83dd09499f1d034fb365e9e
+      internalID: -757534731
       vertices: []
       indices: 
       edges: []
@@ -155,10 +155,10 @@ TextureImporter:
       name: Chill2024_MainMenu_2
       rect:
         serializedVersion: 2
-        x: 25
-        y: 86
-        width: 78
-        height: 39
+        x: 0
+        y: 213
+        width: 128
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 87df6ea854a786d478de1fb82d6accd9
-      internalID: 1667475572
+      spriteID: b169c771c9117d949ab272f10b78857e
+      internalID: -1965586106
       vertices: []
       indices: 
       edges: []
@@ -176,10 +176,10 @@ TextureImporter:
       name: Chill2024_MainMenu_3
       rect:
         serializedVersion: 2
-        x: 154
-        y: 88
-        width: 75
-        height: 36
+        x: 128
+        y: 213
+        width: 128
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,8 +187,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9b7577528d359dd47b5a9ba9e497113f
-      internalID: -1451663080
+      spriteID: b5bb73cad61973542870dd5746e05c83
+      internalID: 2026720204
       vertices: []
       indices: 
       edges: []
@@ -197,10 +197,10 @@ TextureImporter:
       name: Chill2024_MainMenu_4
       rect:
         serializedVersion: 2
-        x: 156
-        y: 176
-        width: 71
-        height: 32
+        x: 128
+        y: 299
+        width: 128
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,8 +208,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 121db7da0a3065047929a5a6558cb4d9
-      internalID: -567881869
+      spriteID: bd74f0f18e3faba48830be096a809dc2
+      internalID: -641628671
       vertices: []
       indices: 
       edges: []
@@ -218,10 +218,10 @@ TextureImporter:
       name: Chill2024_MainMenu_5
       rect:
         serializedVersion: 2
-        x: 24
-        y: 44
-        width: 77
-        height: 41
+        x: 0
+        y: 171
+        width: 128
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -229,8 +229,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d68a21b0a7ff1d841b669bc0e5853836
-      internalID: -1915878672
+      spriteID: 4892bf3aa9dc8da4dabf8b85a503e352
+      internalID: -1894371995
       vertices: []
       indices: 
       edges: []
@@ -239,10 +239,10 @@ TextureImporter:
       name: Chill2024_MainMenu_6
       rect:
         serializedVersion: 2
-        x: 154
-        y: 46
-        width: 75
-        height: 36
+        x: 128
+        y: 171
+        width: 128
+        height: 42
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,8 +250,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8c7c68e3d2cbd524ebfbb73edea5daa7
-      internalID: 985234718
+      spriteID: dab6a07d51fa6514597d2130094d27cf
+      internalID: 1036570101
       vertices: []
       indices: 
       edges: []
@@ -260,10 +260,10 @@ TextureImporter:
       name: Chill2024_MainMenu_7
       rect:
         serializedVersion: 2
-        x: 156
-        y: 134
-        width: 71
-        height: 32
+        x: 0
+        y: 128
+        width: 128
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,8 +271,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ff01d7de4fc56444ba9321be9c1e4751
-      internalID: 2060084473
+      spriteID: d1caef7e789f6544d9047b6eab834962
+      internalID: 237526405
       vertices: []
       indices: 
       edges: []
@@ -281,10 +281,10 @@ TextureImporter:
       name: Chill2024_MainMenu_8
       rect:
         serializedVersion: 2
-        x: 26
-        y: 3
-        width: 77
-        height: 38
+        x: 128
+        y: 256
+        width: 128
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -292,8 +292,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3948e9b172693194883d14a41854eb82
-      internalID: -1142106951
+      spriteID: 82ce00e0e77ea414dbfe860c995b40a4
+      internalID: -1180085634
       vertices: []
       indices: 
       edges: []
@@ -302,10 +302,10 @@ TextureImporter:
       name: Chill2024_MainMenu_9
       rect:
         serializedVersion: 2
-        x: 154
-        y: 4
-        width: 75
-        height: 36
+        x: 128
+        y: 128
+        width: 128
+        height: 43
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,8 +313,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7bf1f33f49006d7419a4e5a3c9590ccf
-      internalID: -335518138
+      spriteID: 8383a3bc5de63db45a22442f5644e3e8
+      internalID: 13276025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill2024_MainMenu_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 87
+        width: 128
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b63e397db6297f4ab4a9a85427999bc
+      internalID: -491195626
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill2024_MainMenu_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 45
+        width: 128
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca549fe22fe831e48a2ceef00a84f586
+      internalID: -472770458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Chill2024_MainMenu_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 128
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db90628d2a814c44bb8406586721c620
+      internalID: 1204539906
       vertices: []
       indices: 
       edges: []
@@ -330,16 +393,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Chill2024_MainMenu_0: -1548634832
-      Chill2024_MainMenu_1: -695792151
-      Chill2024_MainMenu_2: 1667475572
-      Chill2024_MainMenu_3: -1451663080
-      Chill2024_MainMenu_4: -567881869
-      Chill2024_MainMenu_5: -1915878672
-      Chill2024_MainMenu_6: 985234718
-      Chill2024_MainMenu_7: 2060084473
-      Chill2024_MainMenu_8: -1142106951
-      Chill2024_MainMenu_9: -335518138
+      Chill2024_MainMenu_0: -1129633749
+      Chill2024_MainMenu_1: -757534731
+      Chill2024_MainMenu_10: -491195626
+      Chill2024_MainMenu_11: -472770458
+      Chill2024_MainMenu_12: 1204539906
+      Chill2024_MainMenu_2: -1965586106
+      Chill2024_MainMenu_3: 2026720204
+      Chill2024_MainMenu_4: -641628671
+      Chill2024_MainMenu_5: -1894371995
+      Chill2024_MainMenu_6: 1036570101
+      Chill2024_MainMenu_7: 237526405
+      Chill2024_MainMenu_8: -1180085634
+      Chill2024_MainMenu_9: 13276025
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

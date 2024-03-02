@@ -12,14 +12,14 @@ public class MainMenu : MonoBehaviour
     private Sprite replacementSprite;
     public void PlayGame()
     {
-        spriteRenderer.sprite = replacementSprite;
+        //spriteRenderer.sprite = replacementSprite;
         SceneManager.LoadSceneAsync("SampleScene");
     }
 
     public void Tutorial()
     {
         //spriteRenderer.sprite = replacementSprite;
-        SceneManager.LoadScene("Tutorial");
+        SceneManager.LoadSceneAsync("Tutorial");
     }
 
     public void QuitGame()
