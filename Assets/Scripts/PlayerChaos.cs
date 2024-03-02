@@ -35,6 +35,7 @@ public class PlayerChaos : MonoBehaviour
         {
             CurrentChaos += 20.0f;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
+            ChaosAmountText.text = "Chaos Score: " + CurrentChaos;
         }
 
         if (CurrentChaos > 0.0f)
@@ -60,5 +61,10 @@ public class PlayerChaos : MonoBehaviour
         {
             IsNearIncident = false;
         }
+    }
+
+    public float GetChaosAmount()
+    {
+        return ChaosAmount;
     }
 }

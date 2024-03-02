@@ -6,6 +6,8 @@ using UnityEngine;
 public class InteractionZone : MonoBehaviour
 {
     [SerializeField] private String RequiredItem;
+
+    [SerializeField] private bool IsMessedWith;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,10 +27,16 @@ public class InteractionZone : MonoBehaviour
             if (item.ItemName == RequiredItem)
             {
                 inventory.RemoveItemFromInventory(item);
+                IsMessedWith = true;
                 return true;
             }
         }
 
         return false;
+    }
+
+    public bool GetIsMessedWith()
+    {
+        return IsMessedWith;
     }
 }

@@ -14,6 +14,10 @@ public class PlayerInventory : MonoBehaviour
     
     [SerializeField] private int MaxInventoryItems;
     [SerializeField] private int CurrentInventoryIndex;
+
+    [SerializeField] private bool NearItem;
+
+    [SerializeField] private InventoryItem CurrentItemNear;
     // Start is called before the first frame update
     void Start()
     {
@@ -23,7 +27,10 @@ public class PlayerInventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (Input.GetKeyDown(KeyCode.Q) && NearItem)
+        {
+            PickUpObject(CurrentItemNear);
+        }
     }
 
     private void AddItemToInventory(InventoryItem newItem)
@@ -53,9 +60,14 @@ public class PlayerInventory : MonoBehaviour
     {
         if (other.CompareTag("InventoryItem"))
         {
-            InventoryItem newItem = other.GetComponent<InventoryItem>();
-            AddItemToInventory(newItem);
-            Destroy(other.gameObject);
+            CurrentItemNear = other.GetComponent<InventoryItem>();
+            NearItem = true;
         }
+    }
+
+    private void PickUpObject(InventoryItem newItem)
+    {
+        AddItemToInventory(newItem);
+        Destroy(newItem.gameObject);
     }
 }
