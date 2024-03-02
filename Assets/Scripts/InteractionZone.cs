@@ -8,10 +8,14 @@ public class InteractionZone : MonoBehaviour
     [SerializeField] private String RequiredItem;
 
     [SerializeField] private bool IsMessedWith;
+
+    [SerializeField] private PlayerInventory Inventory;
+
+    [SerializeField] private InventoryItem Item;
     // Start is called before the first frame update
     void Start()
     {
-        
+        Inventory = FindObjectOfType<PlayerInventory>();
     }
 
     // Update is called once per frame
@@ -26,8 +30,7 @@ public class InteractionZone : MonoBehaviour
         {
             if (item.ItemName == RequiredItem)
             {
-                inventory.RemoveItemFromInventory(item);
-                IsMessedWith = true;
+                Item = item;
                 return true;
             }
         }
@@ -35,6 +38,11 @@ public class InteractionZone : MonoBehaviour
         return false;
     }
 
+    public void UpdateInteractionZone()
+    {
+        Inventory.RemoveItemFromInventory(Item);
+        IsMessedWith = true;
+    }
     public bool GetIsMessedWith()
     {
         return IsMessedWith;
