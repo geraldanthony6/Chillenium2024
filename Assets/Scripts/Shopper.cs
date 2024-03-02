@@ -21,9 +21,13 @@ public class Shopper : MonoBehaviour
     [SerializeField] private float DistanceToTargetPoint;
 
     [SerializeField] private ShopperBrain Brain;
+
+    [SerializeField] private float ShopperSpeed;
     // Start is called before the first frame update
     void Start()
     {
+        Brain = GetComponent<ShopperBrain>();
+        
         CurrentWanderIndex = 0;
         CurrentWanderPoint = WanderPoints[CurrentWanderIndex];
 
@@ -39,7 +43,7 @@ public class Shopper : MonoBehaviour
             DistanceToTargetPoint = Vector2.Distance(transform.position, CurrentWanderPoint.position);
             if (DistanceToTargetPoint > 1.0f)
             {
-                transform.position = Vector2.MoveTowards(transform.position ,CurrentWanderPoint.position, 2.0f * Time.deltaTime);
+                transform.position = Vector2.MoveTowards(transform.position ,CurrentWanderPoint.position, ShopperSpeed * Time.deltaTime);
             }
 
             if (DistanceToTargetPoint <= 1.0f && CurrentWanderIndex != WanderPoints.Length - 1)
@@ -58,7 +62,7 @@ public class Shopper : MonoBehaviour
             if (DistanceToTargetPoint > 1.0f)
             {
                 transform.position = Vector2.MoveTowards(transform.position, CurrentManagerRoutePoint.position,
-                    4.0f * Time.deltaTime);
+                    ShopperSpeed * 2.0f * Time.deltaTime);
             }
 
             if (DistanceToTargetPoint <= 1.0f && CurrentManagerRouteIndex != GetManagerRoute.Length - 1)
