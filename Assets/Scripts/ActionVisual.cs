@@ -28,7 +28,7 @@ public class ActionVisual : MonoBehaviour
             Activate();
     }
 
-    private void Activate()
+    public void Activate()
     {
         color = new Color(220f/255, 20f/255, 60f/266);
     }

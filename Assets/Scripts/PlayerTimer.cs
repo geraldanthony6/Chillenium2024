@@ -13,7 +13,7 @@ public class PlayerTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameTimer = 3.0f;
+        GameTimer = 120.0f;
         IsGameRunning = true;
     }
 
@@ -28,7 +28,7 @@ public class PlayerTimer : MonoBehaviour
         }
         else if(GameTimer < 0 && IsGameRunning)
         {
-            Debug.Log("End Game");
+            Debug.Log("End Game, show the score and stuff player score");
             IsGameRunning = false;
         }
 

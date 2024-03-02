@@ -24,8 +24,6 @@ public class PlayerMovement : MonoBehaviour
         transform.Translate(Vector2.right * 15f * Time.deltaTime * Input.GetAxisRaw("Horizontal"));
         
         transform.Translate(Vector2.up * 15f * Time.deltaTime * Input.GetAxisRaw("Vertical"));
-        
-        Debug.Log("Horizontal Value: " +Input.GetAxisRaw("Horizontal") );
 
         if (Input.GetAxisRaw("Horizontal") != 0.0f || Input.GetAxisRaw("Vertical") != 0.0f)
         {
@@ -33,40 +31,6 @@ public class PlayerMovement : MonoBehaviour
         } else if (Input.GetAxisRaw("Horizontal") == 0.0f && Input.GetAxisRaw("Vertical") == 0.0f)
         {
             AnimController.SetBool("IsWalking", false);
-        }
-        
-        if (Input.GetAxisRaw("Horizontal") == -1.0f)
-        {
-           Debug.Log("Flip the Character To Look Left");
-           //PlayerMesh.transform.localRotation = MovingLeftRotation;
-        }
-
-        if (Input.GetAxisRaw("Horizontal") == 0.0f)
-        {
-            Debug.Log("No Flip Horizontal");
-        }
-
-
-        if (Input.GetAxisRaw("Horizontal") == 1.0f)
-        {
-            Debug.Log("Flip the character to the right");
-        }
-        
-        if (Input.GetAxisRaw("Vertical") == -1.0f)
-        {
-            Debug.Log("Flip the Character To Look Down");
-            //PlayerMesh.transform.localRotation = MovingLeftRotation;
-        }
-
-        if (Input.GetAxisRaw("Vertical") == 0.0f)
-        {
-            Debug.Log("No Flip Vertical");
-        }
-
-
-        if (Input.GetAxisRaw("Vertical") == 1.0f)
-        {
-            Debug.Log("Flip the character to Up");
         }
         
         OnRotate();

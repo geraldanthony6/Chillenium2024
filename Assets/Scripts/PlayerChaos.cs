@@ -23,11 +23,15 @@ public class PlayerChaos : MonoBehaviour
     [SerializeField] private PlayerInventory PlayerInventory;
 
     [SerializeField] private InteractionZone CurrentInteractionZone;
+
+    [SerializeField] private List<Shopper> ShoppersList;
+
+    [SerializeField] private List<PoliceMovement> PoliceList;
     // Start is called before the first frame update
     void Start()
     {
         ChaosBar.fillAmount = 0.0f;
-        MaxChaos = 100.0f;
+        MaxChaos = 16.0f;
     }
 
     // Update is called once per frame
@@ -35,15 +39,14 @@ public class PlayerChaos : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && IsNearIncident)
         {
-            CurrentChaos += 20.0f;
+            CurrentChaos += 1.0f;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
-            ChaosAmountText.text = "Chaos Score: " + CurrentChaos;
+            ChaosAmountText.text = "Chaos Events Caused: " + CurrentChaos + "/" + MaxChaos;
             CurrentInteractionZone.UpdateInteractionZone();
         }
 
         if (CurrentChaos > 0.0f)
         {
-            CurrentChaos -= Time.deltaTime;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
         }
     }
@@ -63,6 +66,8 @@ public class PlayerChaos : MonoBehaviour
         {
             IsNearIncident = false;
         }
+        
+        if(other.CompareTag(""))
     }
 
     public float GetChaosAmount()

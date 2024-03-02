@@ -6,6 +6,8 @@ using UnityEngine;
 public class ExitDoor : MonoBehaviour
 {
     [SerializeField] private PlayerChaos PlayerChaos;
+
+    [SerializeField] private EndGame EndGame;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +24,9 @@ public class ExitDoor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("End Game. You caused this much chaos: " + PlayerChaos.GetChaosAmount());
+            EndGame.CalculateResults();
         }
     }
+    
+    
 }
