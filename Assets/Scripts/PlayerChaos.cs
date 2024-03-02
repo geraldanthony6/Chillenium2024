@@ -16,7 +16,7 @@ public class PlayerChaos : MonoBehaviour
 
     [SerializeField] private float CurrentChaos;
     
-    [SerializeField] private Slider ChaosBar;
+    [SerializeField] private Image ChaosBar;
 
     [SerializeField] private bool IsNearIncident;
 
@@ -24,9 +24,8 @@ public class PlayerChaos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        ChaosBar.fillAmount = 0.0f;
         MaxChaos = 100.0f;
-        CurrentChaos = 0.0f;
-        ChaosBar.maxValue = MaxChaos;
     }
 
     // Update is called once per frame
@@ -34,14 +33,14 @@ public class PlayerChaos : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && IsNearIncident)
         {
-            CurrentChaos += 25.0f;
-            ChaosBar.value += 25.0f;
+            CurrentChaos += 20.0f;
+            ChaosBar.fillAmount = CurrentChaos / MaxChaos;
         }
 
         if (CurrentChaos > 0.0f)
         {
             CurrentChaos -= Time.deltaTime;
-            ChaosBar.value -= Time.deltaTime;
+            ChaosBar.fillAmount = CurrentChaos / MaxChaos;
         }
     }
 
