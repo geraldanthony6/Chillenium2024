@@ -16,11 +16,14 @@ public class InteractionZone : MonoBehaviour
     [SerializeField] private SpriteRenderer Renderer;
 
     [SerializeField] private bool NeedsItem;
+
+    [SerializeField] private ActionVisual ActionVisual;
     // Start is called before the first frame update
     void Start()
     {
         Inventory = FindObjectOfType<PlayerInventory>();
         Renderer = GetComponent<SpriteRenderer>();
+        ActionVisual = GetComponent<ActionVisual>();
     }
 
     // Update is called once per frame
@@ -58,11 +61,13 @@ public class InteractionZone : MonoBehaviour
             Inventory.RemoveItemFromInventory(Item);
             IsMessedWith = true;
             Renderer.color = Color.red;
+            ActionVisual.Activate();
         }
         else
         {
             IsMessedWith = true;
             Renderer.color = Color.red;
+            ActionVisual.Activate();
         }
 
     }
