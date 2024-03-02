@@ -21,6 +21,8 @@ public class PlayerChaos : MonoBehaviour
     [SerializeField] private bool IsNearIncident;
 
     [SerializeField] private PlayerInventory PlayerInventory;
+
+    [SerializeField] private InteractionZone CurrentInteractionZone;
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class PlayerChaos : MonoBehaviour
             CurrentChaos += 20.0f;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
             ChaosAmountText.text = "Chaos Score: " + CurrentChaos;
+            CurrentInteractionZone.UpdateInteractionZone();
         }
 
         if (CurrentChaos > 0.0f)
@@ -49,9 +52,8 @@ public class PlayerChaos : MonoBehaviour
     {
         if (other.CompareTag("ChaosIncident"))
         {
-            InteractionZone curInteractionZone = other.GetComponent<InteractionZone>();
-            IsNearIncident = curInteractionZone.CheckIfCorrectItem(PlayerInventory);
-            //IsNearIncident = true;
+            CurrentInteractionZone = other.GetComponent<InteractionZone>();
+            IsNearIncident = CurrentInteractionZone.CheckIfCorrectItem(PlayerInventory);
         }
     }
 
