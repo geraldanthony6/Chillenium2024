@@ -417,6 +417,7 @@ Transform:
   - {fileID: 1527792125}
   - {fileID: 1834811002}
   - {fileID: 795654748}
+  - {fileID: 1246138721}
   - {fileID: 1465193005}
   - {fileID: 1841681429}
   - {fileID: 1047943470}
@@ -709,7 +710,7 @@ Transform:
   m_GameObject: {fileID: 99492843}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -234.93701, y: -53.742363, z: 0.54279417}
+  m_LocalPosition: {x: -234.93701, y: -53.742363, z: 0}
   m_LocalScale: {x: 6.99843, y: 8.295322, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -1599,11 +1600,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (15)
+      value: ToppleCans
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.74209
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Topple Cans
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2449,11 +2458,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (5)
+      value: TurnOffLights
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Flicker Lights
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -2666,7 +2679,7 @@ Transform:
   m_GameObject: {fileID: 408325830}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -93.13701, y: 46.55764, z: 0.54279417}
+  m_LocalPosition: {x: -93.13701, y: 46.55764, z: 0}
   m_LocalScale: {x: 6.090358, y: 5.4016557, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3207,7 +3220,7 @@ Transform:
   m_GameObject: {fileID: 443062661}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -132.13702, y: -57.04236, z: 0.54279417}
+  m_LocalPosition: {x: -132.13702, y: -57.04236, z: 0}
   m_LocalScale: {x: 6.090358, y: 5.401655, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3687,7 +3700,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -191, y: -13.4, z: -10}
+  m_LocalPosition: {x: -190.98, y: -12.1, z: -10.542794}
   m_LocalScale: {x: 1.54, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3796,13 +3809,37 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: NeedsItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: RequiredItem
+      value: Pen
+      objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (1)
+      value: ChangePricesEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.63782
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Diaper Price Change
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_fontSize
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 0.15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4014,7 +4051,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Chaos Score:'
+  m_text: Chaos Events Caused 0/16
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -4147,13 +4184,33 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: NeedsItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: RequiredItem
+      value: Pen
+      objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (9)
+      value: ChangePricesEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.4509
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.1154
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Change Price of Trees
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4263,11 +4320,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (13)
+      value: StealItemOutofCartEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.65447
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Steal From Cart
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4425,11 +4490,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (10)
+      value: ToppleCans
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 4623701234195172556, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.80321
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Topple Cans
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -4938,6 +5011,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 56344523}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &799033674
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5355248762575146663, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -236.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 24.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.54279417
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289698264554247962, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
+      propertyPath: m_Name
+      value: Saw (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4a4e086ab9eb25a4083052643591afda, type: 3}
 --- !u!1 &800647198
 GameObject:
   m_ObjectHideFlags: 0
@@ -5137,6 +5267,7 @@ RectTransform:
   - {fileID: 635514294}
   - {fileID: 1172688395}
   - {fileID: 1740520448}
+  - {fileID: 1897180389}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -5735,11 +5866,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (3)
+      value: ToppleCansEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.75753
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Topple Cans
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6563,6 +6702,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 2039482015}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1246138720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1246138721}
+  m_Layer: 0
+  m_Name: WanderPoint (4)
+  m_TagString: Untagged
+  m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1246138721
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1246138720}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.3, y: -0.6, z: 0}
+  m_LocalScale: {x: 3, y: 3, z: 3}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 56344523}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1247463941
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6621,11 +6791,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (14)
+      value: RemoveWetFloorSignsEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.43077
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Remove Wet Floor Sign
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6856,11 +7034,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (16)
+      value: PantsSomeone
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.66623
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Pants A Worker
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -7757,7 +7943,7 @@ Transform:
   m_GameObject: {fileID: 1415912776}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -191, y: -13.4, z: -10}
+  m_LocalPosition: {x: -190.98, y: -12.1, z: -10.542794}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8444,7 +8630,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 175, y: 0}
+  m_AnchoredPosition: {x: 136, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1549262725
@@ -8710,7 +8896,7 @@ GameObject:
   - component: {fileID: 1602258105}
   m_Layer: 0
   m_Name: ShopperPrefab (5)
-  m_TagString: Untagged
+  m_TagString: Cop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9148,11 +9334,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (12)
+      value: MessWithLights
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.772
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Flicker Lights
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -9432,7 +9626,7 @@ Transform:
   m_GameObject: {fileID: 1712108663}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -234.63701, y: 45.65764, z: 0.54279417}
+  m_LocalPosition: {x: -234.63701, y: 45.65764, z: 0}
   m_LocalScale: {x: 6.99843, y: 8.295322, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9723,8 +9917,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1, y: 0}
-  m_SizeDelta: {x: -2.4000244, y: -0.3999939}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -0.0000076293945}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1740520449
 MonoBehaviour:
@@ -9954,13 +10148,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: NeedsItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: RequiredItem
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (2)
+      value: BreakTheLadderEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.71615
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Break Ladder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -10453,6 +10663,71 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1455657879}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1866862992
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5355248762575146663, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -149.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 43.7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.54279417
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5355248762575146663, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289698264554247962, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_Name
+      value: Pen (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319867634597633595, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_FlipX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7319867634597633595, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
+      propertyPath: m_FlipY
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c043fdce3066bdb4d9b69b9a51664e52, type: 3}
 --- !u!1 &1881533597
 GameObject:
   m_ObjectHideFlags: 0
@@ -10487,7 +10762,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -185, y: 0}
+  m_AnchoredPosition: {x: -158.6, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1881533599
@@ -10527,6 +10802,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1881533597}
+  m_CullTransparentMesh: 1
+--- !u!1 &1897180388
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1897180389}
+  - component: {fileID: 1897180391}
+  - component: {fileID: 1897180390}
+  m_Layer: 5
+  m_Name: HelpBackground
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1897180389
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897180388}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1.2614, y: 0.69301045, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2029800706}
+  m_Father: {fileID: 914821737}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -142, y: -154}
+  m_SizeDelta: {x: 158.68048, y: 160.525}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1897180390
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897180388}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.3962264, g: 0.05606972, b: 0.05606972, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1897180391
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1897180388}
   m_CullTransparentMesh: 1
 --- !u!1 &1902472421
 GameObject:
@@ -10968,6 +11319,7 @@ MonoBehaviour:
   - {fileID: 1527792125}
   - {fileID: 1834811002}
   - {fileID: 795654748}
+  - {fileID: 1246138721}
   GetManagerRoute:
   - {fileID: 1465193005}
   - {fileID: 1841681429}
@@ -11094,6 +11446,140 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &2029800705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2029800706}
+  - component: {fileID: 2029800708}
+  - component: {fileID: 2029800707}
+  m_Layer: 5
+  m_Name: HelpText
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2029800706
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029800705}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1897180389}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -55.5, y: 64.7}
+  m_SizeDelta: {x: 201, y: 51}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2029800707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029800705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: New Text
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 24
+  m_fontSizeBase: 24
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: -37.884712, z: 45.96682, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2029800708
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2029800705}
+  m_CullTransparentMesh: 1
 --- !u!1 &2039482014
 GameObject:
   m_ObjectHideFlags: 0
@@ -11193,11 +11679,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (4)
+      value: TakeAwayWetFloorSignEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.41271
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Remove Wet Floor Sign
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11380,13 +11874,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: NeedsItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: RequiredItem
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (7)
+      value: CutLooseWireEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Cut Wire
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11416,11 +11922,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 742960690958002690, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33.8
+      value: -36.37
       objectReference: {fileID: 0}
     - target: {fileID: 742960690958002690, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -16.9
+      value: 56.9
       objectReference: {fileID: 0}
     - target: {fileID: 742960690958002690, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11454,13 +11960,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: NeedsItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: RequiredItem
+      value: Magnet
+      objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (6)
+      value: MessWithCounterEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.40319
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Mess with Checkout
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -11506,7 +12028,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -70, y: 0}
+  m_AnchoredPosition: {x: -57.2, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2122040091
@@ -11733,13 +12255,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: NeedsItem
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3462482574424768703, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: RequiredItem
+      value: Saw
+      objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (11)
+      value: BreakLadderEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.73526
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Break Ladder
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12003,11 +12541,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_Name
-      value: Action (8)
+      value: SpillMilkEvent
       objectReference: {fileID: 0}
     - target: {fileID: 3986046074967109003, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
       propertyPath: m_TagString
       value: ChaosIncident
+      objectReference: {fileID: 0}
+    - target: {fileID: 5159514223594485846, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.7618
+      objectReference: {fileID: 0}
+    - target: {fileID: 8429794756643102058, guid: ba96b7bd185812a43838ae73da156b4f, type: 3}
+      propertyPath: m_text
+      value: Pour Out Milk
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -12216,6 +12762,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1505094066184002095, guid: f1911c9a36f198d42874b7e16182a78a, type: 3}
+      propertyPath: EndGame
+      value: 
+      objectReference: {fileID: 914821738}
+    - target: {fileID: 1505094066184002095, guid: f1911c9a36f198d42874b7e16182a78a, type: 3}
       propertyPath: ChaosBar
       value: 
       objectReference: {fileID: 260717424}
@@ -12223,6 +12773,14 @@ PrefabInstance:
       propertyPath: ChaosAmountText
       value: 
       objectReference: {fileID: 570349913}
+    - target: {fileID: 2564026978385021773, guid: f1911c9a36f198d42874b7e16182a78a, type: 3}
+      propertyPath: HelpText
+      value: 
+      objectReference: {fileID: 2029800707}
+    - target: {fileID: 2564026978385021773, guid: f1911c9a36f198d42874b7e16182a78a, type: 3}
+      propertyPath: HelpTextBackground
+      value: 
+      objectReference: {fileID: 1897180390}
     - target: {fileID: 2564026978385021773, guid: f1911c9a36f198d42874b7e16182a78a, type: 3}
       propertyPath: InventorySpots.Array.data[0]
       value: 
@@ -12253,15 +12811,15 @@ PrefabInstance:
       objectReference: {fileID: 984638320}
     - target: {fileID: 8761028445728934775, guid: f1911c9a36f198d42874b7e16182a78a, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -191
+      value: -190.98
       objectReference: {fileID: 0}
     - target: {fileID: 8761028445728934775, guid: f1911c9a36f198d42874b7e16182a78a, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -13.4
+      value: -12.1
       objectReference: {fileID: 0}
     - target: {fileID: 8761028445728934775, guid: f1911c9a36f198d42874b7e16182a78a, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.5427942
       objectReference: {fileID: 0}
     - target: {fileID: 8761028445728934775, guid: f1911c9a36f198d42874b7e16182a78a, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12504,5 +13062,7 @@ SceneRoots:
   - {fileID: 1127910914}
   - {fileID: 2063529917}
   - {fileID: 639957282}
+  - {fileID: 1866862992}
   - {fileID: 990423705}
+  - {fileID: 799033674}
   - {fileID: 1710644630}

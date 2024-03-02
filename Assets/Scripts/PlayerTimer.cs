@@ -13,7 +13,7 @@ public class PlayerTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        GameTimer = 120.0f;
+        GameTimer = 60.0f;
         IsGameRunning = true;
     }
 

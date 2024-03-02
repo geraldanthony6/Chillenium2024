@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
@@ -6,6 +7,8 @@ using UnityEngine;
 public class PoliceMovement : MonoBehaviour
 {
     private GameObject Player;
+
+    [SerializeField] public float CopSpeed;
 
     [SerializeField] private float DistanceToPlayer;
 
@@ -24,12 +27,15 @@ public class PoliceMovement : MonoBehaviour
     void Start()
     {
         Player = FindObjectOfType<PlayerMovement>().gameObject;
+        CopSpeed = 6.0f;
+        
+        FindObjectOfType<PlayerChaos>().PoliceList.Add(this);
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, 6.0f * Time.deltaTime);
+        transform.position = Vector2.MoveTowards(transform.position, Player.transform.position, CopSpeed * Time.deltaTime);
         
         FindVisibleTargets();
     }
@@ -62,5 +68,4 @@ public class PoliceMovement : MonoBehaviour
         }
         return new Vector3(Mathf.Sin(angleInDegrees * Mathf.Deg2Rad), 0, Mathf.Cos(angleInDegrees * Mathf.Deg2Rad));
     }
-    
 }

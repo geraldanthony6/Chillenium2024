@@ -73,17 +73,16 @@ public class Shopper : MonoBehaviour
             }
             else if (DistanceToTargetPoint <= 1.0f && CurrentManagerRouteIndex == GetManagerRoute.Length - 1)
             {
-                Debug.Log("Spawn Police");
-                Destroy(gameObject);
             }
         }
     }
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("PoliceSpawnZone"))
+        if (other.CompareTag("PoliceSpawnZone") && Brain.GetIsPissed())
         {
             other.GetComponent<PoliceSpawner>().SpawnPolice();
+            Destroy(gameObject);
         }
     }
 }

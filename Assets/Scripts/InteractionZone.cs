@@ -75,4 +75,21 @@ public class InteractionZone : MonoBehaviour
     {
         return IsMessedWith;
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && NeedsItem)
+        {
+            Inventory.HelpTextBackground.gameObject.SetActive(true);
+            Inventory.HelpText.text = "I think I need a " + RequiredItem + "!";
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && NeedsItem)
+        {
+            Inventory.HelpTextBackground.gameObject.SetActive(false);
+        }
+    }
 }

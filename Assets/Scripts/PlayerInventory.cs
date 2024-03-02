@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerInventory : MonoBehaviour
 {
@@ -18,6 +19,9 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] private bool NearItem;
 
     [SerializeField] private InventoryItem CurrentItemNear;
+
+    [SerializeField] public Image HelpTextBackground;
+    [SerializeField] public TextMeshProUGUI HelpText;
     // Start is called before the first frame update
     void Start()
     {

@@ -24,7 +24,7 @@ public class ExitDoor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            EndGame.CalculateResults();
+            EndGame.CalculateResults(false);
         }
     }
     

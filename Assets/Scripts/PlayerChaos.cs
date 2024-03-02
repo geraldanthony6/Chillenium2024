@@ -26,7 +26,9 @@ public class PlayerChaos : MonoBehaviour
 
     [SerializeField] private List<Shopper> ShoppersList;
 
-    [SerializeField] private List<PoliceMovement> PoliceList;
+    [SerializeField] public List<PoliceMovement> PoliceList;
+
+    [SerializeField] private EndGame EndGame;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,8 +43,23 @@ public class PlayerChaos : MonoBehaviour
         {
             CurrentChaos += 1.0f;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
-            ChaosAmountText.text = "Chaos Events Caused: " + CurrentChaos + "/" + MaxChaos;
+            ChaosAmountText.text = "Chaos Events Caused " + CurrentChaos + "/" + MaxChaos;
             CurrentInteractionZone.UpdateInteractionZone();
+
+            if (CurrentChaos == 3.0f)
+            {
+                UpdateStoreSpeed(2.0f);
+            }
+
+            if (CurrentChaos == 10.0f)
+            {
+                UpdateStoreSpeed(4.0f);
+            }
+
+            if (CurrentChaos == 13.0f)
+            {
+                UpdateStoreSpeed(6.0f);
+            }
         }
 
         if (CurrentChaos > 0.0f)
@@ -58,6 +75,7 @@ public class PlayerChaos : MonoBehaviour
             CurrentInteractionZone = other.GetComponent<InteractionZone>();
             IsNearIncident = CurrentInteractionZone.CheckIfCorrectItem(PlayerInventory);
         }
+
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -66,12 +84,29 @@ public class PlayerChaos : MonoBehaviour
         {
             IsNearIncident = false;
         }
+
         
-        if(other.CompareTag(""))
+
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag("Cop"))
+        {
+            EndGame.CalculateResults(true);
+        }
+    }
+
+    private void UpdateStoreSpeed(float AddValue)
+    {
+        foreach (PoliceMovement Cop in PoliceList)
+        {
+            Cop.CopSpeed += AddValue;
+        }
     }
 
     public float GetChaosAmount()
     {
-        return ChaosAmount;
+        return CurrentChaos;
     }
 }

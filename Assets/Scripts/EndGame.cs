@@ -25,10 +25,17 @@ public class EndGame : MonoBehaviour
         
     }
 
-    public void CalculateResults()
+    public void CalculateResults(bool WasCaught)
     {
         EndGameScreen.gameObject.SetActive(true);
-        
+        if (WasCaught)
+        {
+            GameOverText.text = "You couldn't hang in there and escape...";
+        }
+        else
+        {
+            GameOverText.text = "Those cops couldn't hang with you! You got out!";
+        }
         ScoreText.text = "You caused " + PlayerChaos.GetChaosAmount() + "/" + 16;
     }
 }
