@@ -6,10 +6,12 @@ using UnityEngine.UI;
 
 public class PlayerInventory : MonoBehaviour
 {
-    [SerializeField] private List<InventoryItem> InventoryItems;
+    [SerializeField] public List<InventoryItem> InventoryItems;
 
     [SerializeField] private Image[] InventorySpots;
 
+    [SerializeField] private Sprite EmptySprite;
+    
     [SerializeField] private int MaxInventoryItems;
     [SerializeField] private int CurrentInventoryIndex;
     // Start is called before the first frame update
@@ -29,6 +31,7 @@ public class PlayerInventory : MonoBehaviour
         if (CurrentInventoryIndex < MaxInventoryItems)
         {
             InventoryItems.Add(newItem);
+            newItem.ItemIndex = CurrentInventoryIndex;
             InventorySpots[CurrentInventoryIndex].sprite = newItem.ItemSprite;
             CurrentInventoryIndex++;
         }
@@ -39,12 +42,20 @@ public class PlayerInventory : MonoBehaviour
 
     }
 
+    public void RemoveItemFromInventory(InventoryItem item)
+    {
+        InventoryItems.Remove(item);
+        InventorySpots[item.ItemIndex].sprite = EmptySprite;
+        CurrentInventoryIndex--;
+    }
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("InventoryItem"))
         {
             InventoryItem newItem = other.GetComponent<InventoryItem>();
             AddItemToInventory(newItem);
+            Destroy(other.gameObject);
         }
     }
 }

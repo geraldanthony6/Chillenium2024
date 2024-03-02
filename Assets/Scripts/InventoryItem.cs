@@ -7,6 +7,10 @@ using UnityEngine;
 public class InventoryItem : MonoBehaviour
 {
     [SerializeField] public Sprite ItemSprite;
+
+    [SerializeField] public String ItemName;
+
+    [SerializeField] public int ItemIndex;
     // Start is called before the first frame update
     void Start()
     {
