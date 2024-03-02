@@ -6,6 +6,7 @@ TagManager:
   tags:
   - ChaosIncident
   - InventoryItem
+  - PoliceSpawnZone
   layers:
   - Default
   - TransparentFX
