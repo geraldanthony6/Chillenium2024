@@ -233,7 +233,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -284.42175, y: -216.2959}
+  m_AnchoredPosition: {x: -157, y: -216.2959}
   m_SizeDelta: {x: 422.0191, y: 266.5918}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &27605489
@@ -1240,7 +1240,7 @@ MonoBehaviour:
   EndGame: {fileID: 914821738}
   IsReadyToLeave: 0
   DoorSource: {fileID: 120472145}
-  DoorClose: {fileID: 8300000, guid: eddb9c64d80583948a889b6c5914e19f, type: 3}
+  DoorClose: {fileID: 8300000, guid: c3e5450bf447777489b29682ca610a10, type: 3}
   AnimationTimer: 0
   Renderer: {fileID: 120472142}
   DoorOne: {fileID: 1382918068, guid: 33c4194737fa7a74cbbfe3f447d4f260, type: 3}
@@ -4414,7 +4414,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 148, y: -216.3}
+  m_AnchoredPosition: {x: 254, y: -216.3}
   m_SizeDelta: {x: 411.2013, y: 266.59}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &441218002
@@ -14338,14 +14338,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.381132, g: 0.381132, b: 0.381132, a: 1}
+  m_Color: {r: 0.4490565, g: 0.4490565, b: 0.4490565, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c3b9aa8b2fd6c024da0f83730cca72bd, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 8a6f8e08eb75a4ccca7f0d03a0c22720, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

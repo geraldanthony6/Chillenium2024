@@ -40,6 +40,7 @@ public class EndGame : MonoBehaviour
     public void CalculateResults(int NumForOutcome)
     {
         PlayerChaos.GameOver = true;
+        Time.timeScale = 0;
         EndGameScreen.gameObject.SetActive(true);
         switch (NumForOutcome)
         {

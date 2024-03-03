@@ -627,7 +627,9 @@ MonoBehaviour:
     Darrius Anthony - Art & Music
 
     Kirk McBrayer - Art, Music,
-    & Design'
+    & Design
+
+    <color="green">Evil Laugh Sound from Pixabay.com</color>'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 984c02a902903a4478de7532763b2aee, type: 2}
   m_sharedMaterial: {fileID: 3005419811216966716, guid: 984c02a902903a4478de7532763b2aee, type: 2}
