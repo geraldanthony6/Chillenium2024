@@ -35,6 +35,8 @@ public class PlayerChaos : MonoBehaviour
     [SerializeField] private AudioSource AudioSource;
 
     [SerializeField] private int ChaosEventsDone;
+
+    [SerializeField] private bool GameOver;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,8 +82,11 @@ public class PlayerChaos : MonoBehaviour
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
         }
 
-        if (CurrentChaos <= 0.0f)
+        if (CurrentChaos <= 0.0f && !GameOver)
         {
+            GameOver = true;
+            ChaosEventsDone = (int)(ChaosEventsDone * 0.75);
+            Debug.Log(ChaosEventsDone);
             EndGame.CalculateResults(3);
         }
     }
@@ -110,8 +115,10 @@ public class PlayerChaos : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag("Cop"))
+        if (other.gameObject.CompareTag("Cop") && !GameOver)
         {
+            GameOver = true;
+            ChaosEventsDone = ChaosEventsDone / 2;
             EndGame.CalculateResults(1);
         }
     }

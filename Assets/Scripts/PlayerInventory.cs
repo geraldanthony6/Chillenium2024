@@ -22,6 +22,8 @@ public class PlayerInventory : MonoBehaviour
 
     [SerializeField] public Image HelpTextBackground;
     [SerializeField] public TextMeshProUGUI HelpText;
+
+    [SerializeField] public bool FirstEventHint;
     // Start is called before the first frame update
     void Start()
     {
@@ -64,11 +66,23 @@ public class PlayerInventory : MonoBehaviour
     {
         if (other.CompareTag("InventoryItem"))
         {
+            HelpTextBackground.gameObject.SetActive(true);
+            HelpText.text = "I think I need to press Q...";
             CurrentItemNear = other.GetComponent<InventoryItem>();
             NearItem = true;
         }
     }
-    
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("InventoryItem"))
+        {
+            HelpTextBackground.gameObject.SetActive(false);
+            CurrentItemNear = null;
+            NearItem = false;
+        }
+    }
+
 
     private void PickUpObject(InventoryItem newItem)
     {
