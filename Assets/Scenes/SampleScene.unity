@@ -1240,7 +1240,7 @@ MonoBehaviour:
   EndGame: {fileID: 914821738}
   IsReadyToLeave: 0
   DoorSource: {fileID: 120472145}
-  DoorClose: {fileID: 8300000, guid: a0e5bb633a288384ea187daf55521307, type: 3}
+  DoorClose: {fileID: 8300000, guid: c3e5450bf447777489b29682ca610a10, type: 3}
   AnimationTimer: 0
   Renderer: {fileID: 120472142}
   DoorOne: {fileID: 1382918068, guid: 33c4194737fa7a74cbbfe3f447d4f260, type: 3}
