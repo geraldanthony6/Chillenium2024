@@ -11,6 +11,8 @@ public class InventoryItem : MonoBehaviour
     [SerializeField] public String ItemName;
 
     [SerializeField] public int ItemIndex;
+
+    [SerializeField] public AudioClip PickUpClip;
     // Start is called before the first frame update
     void Start()
     {
