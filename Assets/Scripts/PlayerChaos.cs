@@ -36,7 +36,7 @@ public class PlayerChaos : MonoBehaviour
 
     [SerializeField] private int ChaosEventsDone;
 
-    [SerializeField] private bool GameOver;
+    [SerializeField] public bool GameOver;
     // Start is called before the first frame update
     void Start()
     {
@@ -51,7 +51,7 @@ public class PlayerChaos : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && IsNearIncident && !EndEvent)
         {
             EndEvent = true;
-            CurrentChaos += 1.0f;
+            CurrentChaos += 1.5f;
             ChaosEventsDone += 1;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
             ChaosAmountText.text = "Chaos Events Caused " + ChaosEventsDone + "/" + MaxChaos;
@@ -67,12 +67,12 @@ public class PlayerChaos : MonoBehaviour
 
             if (CurrentChaos == 10.0f)
             {
-                UpdateStoreSpeed(4.0f);
+                UpdateStoreSpeed(2.0f);
             }
 
             if (CurrentChaos == 13.0f)
             {
-                UpdateStoreSpeed(6.0f);
+                UpdateStoreSpeed(2.0f);
             }
         }
 

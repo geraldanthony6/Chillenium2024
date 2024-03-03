@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Experimental.GlobalIllumination;
 
 public class InteractionZone : MonoBehaviour
 {
@@ -22,6 +23,12 @@ public class InteractionZone : MonoBehaviour
     [SerializeField] public AudioClip EventAudio;
 
     [SerializeField] private Animator ReactAnimatior;
+
+    [SerializeField] private bool IsLightFlicker;
+
+    [SerializeField] private SpriteRenderer StoreSpriteRenderer;
+
+    [SerializeField] private Light Light;
     // Start is called before the first frame update
     void Start()
     {
@@ -80,7 +87,19 @@ public class InteractionZone : MonoBehaviour
             ActionVisual.Activate();
             if (ReactAnimatior)
             {
-                ReactAnimatior.SetTrigger("DoAction");  
+                ReactAnimatior.SetTrigger("DoAction");
+            }
+
+            if (IsLightFlicker && Inventory.LightIsOn)
+            {
+                StoreSpriteRenderer.color = Color.gray;
+                Light.intensity = 0;
+                Inventory.LightIsOn = false;
+            }
+            else if (IsLightFlicker && !Inventory.LightIsOn)
+            {
+                StoreSpriteRenderer.color = Color.white;
+                Light.intensity = 1;
             }
         }
 

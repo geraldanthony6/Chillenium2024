@@ -24,6 +24,10 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] public TextMeshProUGUI HelpText;
 
     [SerializeField] public bool FirstEventHint;
+
+    [SerializeField] public bool LightIsOn;
+
+    [SerializeField] public AudioSource Source;
     // Start is called before the first frame update
     void Start()
     {
@@ -43,6 +47,8 @@ public class PlayerInventory : MonoBehaviour
     {
         if (CurrentInventoryIndex < MaxInventoryItems)
         {
+            Source.clip = newItem.PickUpClip;
+            Source.Play();
             InventoryItems.Add(newItem);
             newItem.ItemIndex = CurrentInventoryIndex;
             InventorySpots[CurrentInventoryIndex].sprite = newItem.ItemSprite;
