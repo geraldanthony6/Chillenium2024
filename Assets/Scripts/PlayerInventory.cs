@@ -23,9 +23,13 @@ public class PlayerInventory : MonoBehaviour
     [SerializeField] public Image HelpTextBackground;
     [SerializeField] public TextMeshProUGUI HelpText;
 
+    [SerializeField] public Image PauseMenu;
+
     [SerializeField] public bool FirstEventHint;
 
     [SerializeField] public bool LightIsOn;
+
+    [SerializeField] private bool IsPaused;
 
     [SerializeField] public AudioSource Source;
     // Start is called before the first frame update
@@ -40,6 +44,25 @@ public class PlayerInventory : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Q) && NearItem)
         {
             PickUpObject(CurrentItemNear);
+        }
+
+        if (Input.GetKeyDown(KeyCode.P)) 
+        {
+            if (!IsPaused)
+            {
+                Debug.Log("Pause");
+                Time.timeScale = 0;
+                PauseMenu.gameObject.SetActive(true);
+                IsPaused = true; 
+            }
+            else
+            {
+                Debug.Log("Pause");
+                Time.timeScale = 1;
+                PauseMenu.gameObject.SetActive(false);
+                IsPaused = false;
+            }
+
         }
     }
 

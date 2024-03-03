@@ -22,6 +22,11 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadSceneAsync("Tutorial");
     }
 
+    public void LoadingScreen()
+    {
+        SceneManager.LoadScene("LoadingScreen");
+    }
+
     public void QuitGame()
     {
         Application.Quit();
