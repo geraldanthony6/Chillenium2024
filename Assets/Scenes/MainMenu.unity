@@ -1671,7 +1671,6 @@ GameObject:
   - component: {fileID: 1537949891}
   - component: {fileID: 1537949890}
   - component: {fileID: 1537949889}
-  - component: {fileID: 1537949888}
   m_Layer: 5
   m_Name: Credits
   m_TagString: Untagged
@@ -1699,27 +1698,6 @@ RectTransform:
   m_AnchoredPosition: {x: 169, y: 47.799988}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!95 &1537949888
-Animator:
-  serializedVersion: 5
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1537949886}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: df4d624eb0743cb46baad3dd53865199, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_StabilizeFeet: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &1537949889
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1796,7 +1774,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -1180085634, guid: fd1a704c2e809da42ab37492f1c177e2, type: 3}
+  m_Sprite: {fileID: 144573212, guid: d230e6f55df550748992ed9093f1f013, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
