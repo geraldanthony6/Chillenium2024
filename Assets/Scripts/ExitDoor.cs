@@ -14,20 +14,59 @@ public class ExitDoor : MonoBehaviour
     [SerializeField] private AudioSource DoorSource;
 
     [SerializeField] private AudioClip DoorClose;
+
+    [SerializeField] private float AnimationTimer;
+
+    [SerializeField] private SpriteRenderer Renderer;
+
+    [SerializeField] private Sprite DoorOne;
+    
+    [SerializeField] private Sprite DoorTwo;
+    
+    [SerializeField] private Sprite DoorThree;
+
+    [SerializeField] private Sprite DoorFour;
     // Start is called before the first frame update
     void Start()
     {
+        Renderer = GetComponent<SpriteRenderer>();
         IsReadyToLeave = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.E) && IsReadyToLeave)
+        if (Input.GetKeyDown(KeyCode.E) && IsReadyToLeave)
         {
             DoorSource.clip = DoorClose;
             DoorSource.Play();
             EndGame.CalculateResults(2);
+        }
+
+        if (!IsReadyToLeave)
+        {
+            Renderer.sprite = DoorOne;
+            AnimationTimer = 0.0f;
+        }
+
+        if (AnimationTimer > 0.0f)
+        {
+            AnimationTimer -= Time.deltaTime;
+        }
+
+        if (AnimationTimer > 0.75f && AnimationTimer < 1.0f)
+        {
+            Renderer.sprite = DoorOne;
+        } else if (AnimationTimer > 0.5f && AnimationTimer < 0.75f)
+        {
+            Renderer.sprite = DoorTwo;
+        } else if (AnimationTimer > 0.25f && AnimationTimer < 0.5f)
+        {
+            Renderer.sprite = DoorThree;
+        }
+        else if (AnimationTimer > 0.0f && AnimationTimer < 0.25f)
+        {
+            Renderer.sprite = DoorFour;
         }
     }
 
@@ -36,6 +75,7 @@ public class ExitDoor : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             IsReadyToLeave = true;
+            AnimationTimer = 1.0f;
             //EndGame.CalculateResults(2);
         }
     }
