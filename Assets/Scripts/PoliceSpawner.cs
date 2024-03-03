@@ -40,9 +40,28 @@ public class PoliceSpawner : MonoBehaviour
     public void SpawnPolice()
     {
         CopsText.SetActive(true);
+        if(!IsActive)
+            PlayAudio();
         IsActive = true;
         Instantiate(PolicePrefab, transform.position, Quaternion.identity);
         Activate();
+    }
+
+    [SerializeField] AudioSource source;
+    [SerializeField] AudioClip[] clip;
+    void PlayAudio()
+    {
+        source.PlayOneShot(clip[0]);
+        StartCoroutine(PlayDelayed());
+    }
+
+    private IEnumerator PlayDelayed()
+    {
+        while(source.isPlaying)
+        {
+            yield return new WaitForSeconds(0.1f);
+        }
+        source.PlayOneShot(clip[1]);
     }
     
     public void Activate()
