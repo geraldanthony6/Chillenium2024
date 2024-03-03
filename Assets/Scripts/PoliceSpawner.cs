@@ -46,11 +46,14 @@ public class PoliceSpawner : MonoBehaviour
         Instantiate(PolicePrefab, transform.position, Quaternion.identity);
         Activate();
     }
-
+    public static bool hasPlayedAudio = false;
     [SerializeField] AudioSource source;
     [SerializeField] AudioClip[] clip;
     void PlayAudio()
     {
+        if (hasPlayedAudio)
+            return;
+        hasPlayedAudio=true;
         source.PlayOneShot(clip[0]);
         StartCoroutine(PlayDelayed());
     }
