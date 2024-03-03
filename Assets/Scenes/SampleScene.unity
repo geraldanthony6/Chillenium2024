@@ -1179,7 +1179,7 @@ MonoBehaviour:
   EndGame: {fileID: 914821738}
   IsReadyToLeave: 0
   DoorSource: {fileID: 120472145}
-  DoorClose: {fileID: 8300000, guid: 1bcb1afeda154b4468843b4b23b6596d, type: 3}
+  DoorClose: {fileID: 8300000, guid: eddb9c64d80583948a889b6c5914e19f, type: 3}
   AnimationTimer: 0
   Renderer: {fileID: 120472142}
   DoorOne: {fileID: 1382918068, guid: 33c4194737fa7a74cbbfe3f447d4f260, type: 3}
@@ -11771,8 +11771,8 @@ Transform:
   m_GameObject: {fileID: 1462921445}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.15, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -1.67, y: 1.01, z: 0}
+  m_LocalScale: {x: 0.3724, y: 0.43628472, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 742960689717768998}
@@ -11818,7 +11818,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1f131aaaa348d49dfae55b1153d699f7, type: 3}
   m_Color: {r: 1, g: 0.9816059, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -13001,8 +13001,8 @@ Transform:
   m_GameObject: {fileID: 1621694858}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.123, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.07, y: 1.0254, z: 0}
+  m_LocalScale: {x: 0.46514696, y: 0.46129188, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 742960689990836231}
@@ -13048,8 +13048,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0.7896061, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 1f131aaaa348d49dfae55b1153d699f7, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -38,6 +38,7 @@ public class ExitDoor : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && IsReadyToLeave)
         {
+            DoorSource.volume = 1;
             DoorSource.clip = DoorClose;
             DoorSource.Play();
             EndGame.CalculateResults(2);
