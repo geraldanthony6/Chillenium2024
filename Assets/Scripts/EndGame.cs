@@ -37,10 +37,10 @@ public class EndGame : MonoBehaviour
                 GameOverText.text = "Those cops couldn't hang with you! You got out!";
                 break;
             case 3:
-                GameOverText.text = "You ran out of time... L delinquent";
+                GameOverText.text = "You ran out of chaos energy... L delinquent";
                 break;
         }
         
-        ScoreText.text = "You caused " + PlayerChaos.GetChaosAmount() + "/" + 16;
+        ScoreText.text = "You caused " + PlayerChaos.GetChaosEventsDone() + "/" + 16 + " chaos events!";
     }
 }
