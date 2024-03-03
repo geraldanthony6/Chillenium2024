@@ -26,6 +26,8 @@ public class ExitDoor : MonoBehaviour
     [SerializeField] private Sprite DoorThree;
 
     [SerializeField] private Sprite DoorFour;
+
+    [SerializeField] private PlayerInventory Inventory;
     // Start is called before the first frame update
     void Start()
     {
@@ -75,6 +77,8 @@ public class ExitDoor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Inventory.HelpTextBackground.gameObject.SetActive(true);
+            Inventory.HelpText.text = "I can leave with E I think...";
             IsReadyToLeave = true;
             AnimationTimer = 1.0f;
             //EndGame.CalculateResults(2);
@@ -85,6 +89,7 @@ public class ExitDoor : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
+            Inventory.HelpTextBackground.gameObject.SetActive(false);
             IsReadyToLeave = false;
         }
     }
