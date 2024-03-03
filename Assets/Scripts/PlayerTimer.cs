@@ -10,6 +10,8 @@ public class PlayerTimer : MonoBehaviour
     [SerializeField] private TextMeshProUGUI GameTimerText;
 
     [SerializeField] private bool IsGameRunning;
+
+    [SerializeField] private EndGame EndGame;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +30,7 @@ public class PlayerTimer : MonoBehaviour
         }
         else if(GameTimer < 0 && IsGameRunning)
         {
-            Debug.Log("End Game, show the score and stuff player score");
+            EndGame.CalculateResults(3);
             IsGameRunning = false;
         }
 

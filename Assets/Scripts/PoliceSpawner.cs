@@ -7,6 +7,8 @@ public class PoliceSpawner : MonoBehaviour
     [SerializeField] private GameObject PolicePrefab;
 
     [SerializeField] private Transform SpawnPoint;
+
+    [SerializeField] private GameObject CopsText;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +23,7 @@ public class PoliceSpawner : MonoBehaviour
 
     public void SpawnPolice()
     {
+        CopsText.SetActive(true);
         Instantiate(PolicePrefab, transform.position, Quaternion.identity);
     }
 }

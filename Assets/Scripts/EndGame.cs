@@ -25,17 +25,22 @@ public class EndGame : MonoBehaviour
         
     }
 
-    public void CalculateResults(bool WasCaught)
+    public void CalculateResults(int NumForOutcome)
     {
         EndGameScreen.gameObject.SetActive(true);
-        if (WasCaught)
+        switch (NumForOutcome)
         {
-            GameOverText.text = "You couldn't hang in there and escape...";
+            case 1:
+                GameOverText.text = "You couldn't hang in there and escape...";
+                break;
+            case 2:
+                GameOverText.text = "Those cops couldn't hang with you! You got out!";
+                break;
+            case 3:
+                GameOverText.text = "You ran out of time... L delinquent";
+                break;
         }
-        else
-        {
-            GameOverText.text = "Those cops couldn't hang with you! You got out!";
-        }
+        
         ScoreText.text = "You caused " + PlayerChaos.GetChaosAmount() + "/" + 16;
     }
 }

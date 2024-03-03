@@ -29,6 +29,10 @@ public class PlayerChaos : MonoBehaviour
     [SerializeField] public List<PoliceMovement> PoliceList;
 
     [SerializeField] private EndGame EndGame;
+
+    [SerializeField] private bool EndEvent;
+
+    [SerializeField] private AudioSource AudioSource;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,12 +43,16 @@ public class PlayerChaos : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && IsNearIncident)
+        if (Input.GetKeyDown(KeyCode.E) && IsNearIncident && !EndEvent)
         {
+            EndEvent = true;
             CurrentChaos += 1.0f;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
             ChaosAmountText.text = "Chaos Events Caused " + CurrentChaos + "/" + MaxChaos;
             CurrentInteractionZone.UpdateInteractionZone();
+
+            AudioSource.clip = CurrentInteractionZone.EventAudio;
+            AudioSource.Play();
 
             if (CurrentChaos == 3.0f)
             {
@@ -70,10 +78,11 @@ public class PlayerChaos : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("ChaosIncident"))
+        if (other.CompareTag("ChaosIncident") && !EndEvent)
         {
             CurrentInteractionZone = other.GetComponent<InteractionZone>();
             IsNearIncident = CurrentInteractionZone.CheckIfCorrectItem(PlayerInventory);
+            //AudioSource.clip = CurrentInteractionZone.EventAudio;
         }
 
     }
@@ -83,6 +92,7 @@ public class PlayerChaos : MonoBehaviour
         if (other.CompareTag("ChaosIncident"))
         {
             IsNearIncident = false;
+            EndEvent = false;
         }
 
         
@@ -93,7 +103,7 @@ public class PlayerChaos : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Cop"))
         {
-            EndGame.CalculateResults(true);
+            EndGame.CalculateResults(1);
         }
     }
 

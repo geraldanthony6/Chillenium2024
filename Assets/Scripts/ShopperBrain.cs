@@ -12,6 +12,10 @@ public class ShopperBrain : MonoBehaviour
     [SerializeField] private Shopper ShopperMovement;
 
     [SerializeField] private bool IsPissed;
+
+    [SerializeField] private AudioSource ShopperAudio;
+
+    [SerializeField] private AudioClip Scream;
     // Start is called before the first frame update
     void Start()
     {
@@ -31,6 +35,8 @@ public class ShopperBrain : MonoBehaviour
         {
             ShopperRenderer.color = Color.red;
             IsPissed = true;
+            ShopperAudio.clip = Scream;
+            ShopperAudio.Play();
         }
     }
 
