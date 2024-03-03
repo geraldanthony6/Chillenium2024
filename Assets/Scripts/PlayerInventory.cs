@@ -119,4 +119,12 @@ public class PlayerInventory : MonoBehaviour
         NearItem = false;
         Destroy(newItem.gameObject);
     }
+
+    public void ResumeGame()
+    {
+        Debug.Log("Pause");
+        Time.timeScale = 1;
+        PauseMenu.gameObject.SetActive(false);
+        IsPaused = false;
+    }
 }
