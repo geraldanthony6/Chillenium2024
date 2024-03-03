@@ -51,7 +51,7 @@ public class PlayerChaos : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) && IsNearIncident && !EndEvent)
         {
             EndEvent = true;
-            CurrentChaos += 1.5f;
+            CurrentChaos += 1.0f;
             ChaosEventsDone += 1;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
             ChaosAmountText.text = "Chaos Events Caused " + ChaosEventsDone + "/" + MaxChaos;
@@ -78,7 +78,7 @@ public class PlayerChaos : MonoBehaviour
 
         if (CurrentChaos > 0.0f)
         {
-            CurrentChaos -= Time.deltaTime * 0.5f;
+            CurrentChaos -= Time.deltaTime / 3;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
         }
 

@@ -29,6 +29,12 @@ public class InteractionZone : MonoBehaviour
     [SerializeField] private SpriteRenderer StoreSpriteRenderer;
 
     [SerializeField] private Light Light;
+
+    [SerializeField] private GameObject NewInteractionVisual;
+
+    [SerializeField] private GameObject TransformInteractionVisual;
+
+    [SerializeField] private Sprite TransformedSprite;
     // Start is called before the first frame update
     void Start()
     {
@@ -79,6 +85,16 @@ public class InteractionZone : MonoBehaviour
             {
                 ReactAnimatior.SetTrigger("DoAction");
             }
+            
+            if (NewInteractionVisual)
+            {
+                NewInteractionVisual.SetActive(true);
+            }
+            
+            if (TransformInteractionVisual)
+            {
+                TransformInteractionVisual.GetComponent<SpriteRenderer>().sprite = TransformedSprite;
+            }
         }
         else
         {
@@ -90,7 +106,17 @@ public class InteractionZone : MonoBehaviour
                 ReactAnimatior.SetTrigger("DoAction");
             }
 
-            if (IsLightFlicker && Inventory.LightIsOn)
+            if (NewInteractionVisual)
+            {
+                NewInteractionVisual.SetActive(true);
+            }
+
+            if (TransformInteractionVisual)
+            {
+                TransformInteractionVisual.GetComponent<SpriteRenderer>().sprite = TransformedSprite;
+            }
+
+        if (IsLightFlicker && Inventory.LightIsOn)
             {
                 StoreSpriteRenderer.color = Color.gray;
                 Light.intensity = 0;
