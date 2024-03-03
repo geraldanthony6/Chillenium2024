@@ -68,10 +68,12 @@ public class PlayerInventory : MonoBehaviour
             NearItem = true;
         }
     }
+    
 
     private void PickUpObject(InventoryItem newItem)
     {
         AddItemToInventory(newItem);
+        NearItem = false;
         Destroy(newItem.gameObject);
     }
 }

@@ -18,6 +18,10 @@ public class InteractionZone : MonoBehaviour
     [SerializeField] private bool NeedsItem;
 
     [SerializeField] private ActionVisual ActionVisual;
+
+    [SerializeField] public AudioClip EventAudio;
+
+    [SerializeField] private Animator ReactAnimatior;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,23 +38,25 @@ public class InteractionZone : MonoBehaviour
 
     public bool CheckIfCorrectItem(PlayerInventory inventory)
     {
-        if (NeedsItem)
+        if (!IsMessedWith)
         {
-            foreach (InventoryItem item in inventory.InventoryItems)
+            if (NeedsItem)
             {
-                if (item.ItemName == RequiredItem)
+                foreach (InventoryItem item in inventory.InventoryItems)
                 {
-                    Item = item;
-                    return true;
+                    if (item.ItemName == RequiredItem)
+                    {
+                        Item = item;
+                        return true;
+                    }
                 }
             }
+            else
+            {
+                return true;
+            }
         }
-        else
-        {
-            return true;
-        }
-
-
+        
         return false;
     }
 
@@ -62,12 +68,20 @@ public class InteractionZone : MonoBehaviour
             IsMessedWith = true;
             Renderer.color = Color.red;
             ActionVisual.Activate();
+            if (ReactAnimatior)
+            {
+                ReactAnimatior.SetTrigger("DoAction");
+            }
         }
         else
         {
             IsMessedWith = true;
             Renderer.color = Color.red;
             ActionVisual.Activate();
+            if (ReactAnimatior)
+            {
+                ReactAnimatior.SetTrigger("DoAction");  
+            }
         }
 
     }

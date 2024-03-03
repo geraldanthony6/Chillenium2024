@@ -24,6 +24,8 @@ public class Shopper : MonoBehaviour
     [SerializeField] private ShopperBrain Brain;
 
     [SerializeField] private float ShopperSpeed;
+    
+    
     // Start is called before the first frame update
     void Start()
     {
