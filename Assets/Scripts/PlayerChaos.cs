@@ -33,11 +33,14 @@ public class PlayerChaos : MonoBehaviour
     [SerializeField] private bool EndEvent;
 
     [SerializeField] private AudioSource AudioSource;
+
+    [SerializeField] private int ChaosEventsDone;
     // Start is called before the first frame update
     void Start()
     {
-        ChaosBar.fillAmount = 0.0f;
+        ChaosBar.fillAmount = 1.0f;
         MaxChaos = 16.0f;
+        CurrentChaos = MaxChaos;
     }
 
     // Update is called once per frame
@@ -47,8 +50,9 @@ public class PlayerChaos : MonoBehaviour
         {
             EndEvent = true;
             CurrentChaos += 1.0f;
+            ChaosEventsDone += 1;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
-            ChaosAmountText.text = "Chaos Events Caused " + CurrentChaos + "/" + MaxChaos;
+            ChaosAmountText.text = "Chaos Events Caused " + ChaosEventsDone + "/" + MaxChaos;
             CurrentInteractionZone.UpdateInteractionZone();
 
             AudioSource.clip = CurrentInteractionZone.EventAudio;
@@ -72,7 +76,13 @@ public class PlayerChaos : MonoBehaviour
 
         if (CurrentChaos > 0.0f)
         {
+            CurrentChaos -= Time.deltaTime * 0.5f;
             ChaosBar.fillAmount = CurrentChaos / MaxChaos;
+        }
+
+        if (CurrentChaos <= 0.0f)
+        {
+            EndGame.CalculateResults(3);
         }
     }
 
@@ -82,7 +92,6 @@ public class PlayerChaos : MonoBehaviour
         {
             CurrentInteractionZone = other.GetComponent<InteractionZone>();
             IsNearIncident = CurrentInteractionZone.CheckIfCorrectItem(PlayerInventory);
-            //AudioSource.clip = CurrentInteractionZone.EventAudio;
         }
 
     }
@@ -118,5 +127,10 @@ public class PlayerChaos : MonoBehaviour
     public float GetChaosAmount()
     {
         return CurrentChaos;
+    }
+
+    public int GetChaosEventsDone()
+    {
+        return ChaosEventsDone;
     }
 }
