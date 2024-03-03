@@ -97,11 +97,17 @@ public class InteractionZone : MonoBehaviour
             Inventory.HelpTextBackground.gameObject.SetActive(true);
             Inventory.HelpText.text = "I think I need a " + RequiredItem + "!";
         }
+        else if(other.CompareTag("Player") && !NeedsItem && !other.gameObject.GetComponent<PlayerInventory>().FirstEventHint)
+        {
+            Inventory.HelpTextBackground.gameObject.SetActive(true);
+            Inventory.HelpText.text = "I think I need to press E..";
+            other.gameObject.GetComponent<PlayerInventory>().FirstEventHint = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        if (other.CompareTag("Player") && NeedsItem)
+        if (other.CompareTag("Player"))
         {
             Inventory.HelpTextBackground.gameObject.SetActive(false);
         }

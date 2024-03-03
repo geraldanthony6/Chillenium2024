@@ -39,6 +39,12 @@ public class ExitDoor : MonoBehaviour
             //EndGame.CalculateResults(2);
         }
     }
-    
-    
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            IsReadyToLeave = false;
+        }
+    }
 }

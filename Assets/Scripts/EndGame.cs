@@ -12,6 +12,18 @@ public class EndGame : MonoBehaviour
     [SerializeField] private TextMeshProUGUI ScoreText;
 
     [SerializeField] private PlayerChaos PlayerChaos;
+
+    [SerializeField] private Image RankImage;
+
+    [SerializeField] private Sprite DRankSprite;
+    
+    [SerializeField] private Sprite CRankSprite;
+    
+    [SerializeField] private Sprite BRankSprite;
+    
+    [SerializeField] private Sprite ARankSprite;
+    
+    [SerializeField] private Sprite SRankSprite;
     
     // Start is called before the first frame update
     void Start()
@@ -40,6 +52,61 @@ public class EndGame : MonoBehaviour
                 GameOverText.text = "You ran out of chaos energy... L delinquent";
                 break;
         }
+        
+        switch (PlayerChaos.GetChaosEventsDone())
+            {
+                case 0:
+                    RankImage.sprite = DRankSprite;
+                    break;
+                case 1:
+                    RankImage.sprite = DRankSprite;
+                    break;
+                case 2:
+                    RankImage.sprite = DRankSprite;
+                    break;
+                case 3:
+                    RankImage.sprite = DRankSprite;
+                    break;
+                case 4:
+                    RankImage.sprite = CRankSprite;
+                    break;
+                case 5:
+                    RankImage.sprite = CRankSprite;
+                    break;
+                case 6:
+                    RankImage.sprite = CRankSprite;
+                    break;
+                case 7:
+                    RankImage.sprite = CRankSprite;
+                    break;
+                case 8:
+                    RankImage.sprite = BRankSprite;
+                    break;
+                case 9:
+                    RankImage.sprite = BRankSprite;
+                    break;
+                case 10:
+                    RankImage.sprite = BRankSprite;
+                    break;
+                case 11:
+                    RankImage.sprite = BRankSprite;
+                    break;
+                case 12:
+                    RankImage.sprite = ARankSprite;
+                    break;
+                case 13:
+                    RankImage.sprite = ARankSprite;
+                    break;
+                case 14:
+                    RankImage.sprite = ARankSprite;
+                    break;
+                case 15:
+                    RankImage.sprite = ARankSprite;
+                    break;
+                case 16:
+                    RankImage.sprite = SRankSprite;
+                    break;
+            }
         
         ScoreText.text = "You caused " + PlayerChaos.GetChaosEventsDone() + "/" + 16 + " chaos events!";
     }
