@@ -24,8 +24,6 @@ public class ActionVisual : MonoBehaviour
         float alpha = Mathf.Lerp(0.7f,0.95f,Mathf.Abs(Mathf.Sin(Time.time*3)));
         sprite.color = new Color(color.r, color.g, color.b, alpha);
         text.color = new Color(1, 1, 1, alpha);
-        if (Input.GetKey(KeyCode.F))
-            Activate();
     }
 
     public void Activate()
